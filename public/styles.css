@@ -533,3 +533,160 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+
+.m-2 {
+  margin: 0.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.h-\[400px\] {
+  height: 400px;
+}
+
+.w-\[400px\] {
+  width: 400px;
+}
+
+.w-\[70px\] {
+  width: 70px;
+}
+
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
+.border-4 {
+  border-width: 4px;
+}
+
+.border-secondary {
+  --tw-border-opacity: 1;
+  border-color: rgb(154 140 152 / var(--tw-border-opacity));
+}
+
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 34 59 / var(--tw-bg-opacity));
+}
+
+.bg-secondary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(154 140 152 / var(--tw-bg-opacity));
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.font-fixel-bold {
+  font-family: fixel-bold;
+}
+
+.font-fixel-normal {
+  font-family: fixel-normal;
+}
+
+.font-fixel-regular {
+  font-family: fixel-regular;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-text {
+  --tw-text-opacity: 1;
+  color: rgb(201 173 167 / var(--tw-text-opacity));
+}
+
+.shadow {
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-secondary {
+  --tw-shadow-color: #9A8C98;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+@font-face {
+  font-family: 'fixel-bold';
+
+  src: url('../font/FixelDisplay-Bold.woff2') format('woff2');
+
+  font-weight: bold;
+
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'fixel-normal';
+
+  src: url('../font/FixelDisplay-Medium.woff2') format('woff2');
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'fixel-regular';
+
+  src: url('../font/FixelDisplay-Regular.woff2') format('woff2');
+
+  font-weight: normal;
+
+  font-style: normal;
+}
