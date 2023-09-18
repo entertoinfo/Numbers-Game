@@ -4,9 +4,9 @@ module.exports = {
     theme: {
       extend: {
         colors: {
-          'primary': '#22223B',
-          'secondary': '#9A8C98',
-          'text': '#C9ADA7',
+          'primary': '#5D5D81',
+          'secondary': '#3B3355',
+          'text': '#BFCDE0',
         },
         fontFamily: {
           'fixel-bold': 'fixel-bold',

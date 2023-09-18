@@ -1,11 +1,8 @@
-const fiveNumbers = [
-  8, 18, 4, 14, 6, 26, 16, 20, 28, 22, 2, 30, 12, 10, 24, 6, 8, 16, 12, 26, 24,
-  28, 14, 18, 30,
-];
+import fiveNumbers from "./modules/one-zero.mjs";
 
 let container = document.getElementById("tile");
 
-// Перебираємо масив та вставляємо кожен блок
+// Перебираємо масив та вставляємо кожен блок цифр
 for (let i = 0; i < fiveNumbers.length; i++) {
   var number = fiveNumbers[i];
 
