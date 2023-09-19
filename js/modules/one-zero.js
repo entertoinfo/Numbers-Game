@@ -15,10 +15,11 @@ const fiveNumbers = {
       let gridItem = document.createElement("div");
       gridItem.className =
         "bg-secondary m-2 flex justify-center items-center text-text font-fixel-regular text-2xl";
+        gridItem.id = "number " + [i];
 
       // Створюємо елемент <p> та вставляємо цифру.
       let paragraph = document.createElement("p");
-      paragraph.id = "number";
+      paragraph.id = "number"  + [i];
       paragraph.textContent = number;
 
       // Додаємо <p> в блок
