@@ -5,12 +5,12 @@ function myModule(numbers) {
   for (let i = 0; i < numbers.length; i++) {
     let number = numbers[i];
 
-    let gridItem = document.createElement("div");
-    gridItem.id = "number " + [i];
-    gridItem.textContent = number;
-    gridItem.className = "bg-secondary m-2 flex justify-center items-center text-text font-fixel-regular text-tableNumbers";
+    let gameNumbers = document.createElement("div");
+    gameNumbers.id = "number " + [i];
+    gameNumbers.textContent = number;
+    gameNumbers.className = "bg-secondary m-2 flex justify-center items-center text-text font-fixel-regular text-tableNumbers";
 
-    gridContainer.appendChild(gridItem);
+    gridContainer.appendChild(gameNumbers);
   }
   return gridContainer;
 }

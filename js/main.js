@@ -3,5 +3,5 @@ const numbers = [
     28, 14, 18, 30,
   ];
 
-  let container = document.getElementById("game");
-  container.appendChild(myModule(numbers));
+  let gameContainer = document.getElementById("game");
+  gameContainer.appendChild(myModule(numbers));
