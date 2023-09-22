@@ -4,5 +4,4 @@ const numbers = [
   ];
 
   let container = document.getElementById("game");
-
-  myModule(numbers);
+  container.appendChild(myModule(numbers));
