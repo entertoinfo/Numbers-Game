@@ -3,4 +3,6 @@ const numbers = [
     28, 14, 18, 30,
   ];
 
+  let container = document.getElementById("game");
+
   myModule(numbers);

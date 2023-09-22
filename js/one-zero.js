@@ -1,5 +1,4 @@
 function myModule(numbers) {
-  let container = document.getElementById("tile");
 
   // Перебираємо масив та вставляємо кожен блок цифр
   for (let i = 0; i < numbers.length; i++) {
@@ -8,7 +7,7 @@ function myModule(numbers) {
     // Створюємо елемент для блока
     let gridItem = document.createElement("div");
     gridItem.className =
-      "bg-secondary m-2 flex justify-center items-center text-text font-fixel-regular text-2xl";
+      "bg-secondary m-2 flex justify-center items-center text-text font-fixel-regular text-tableNumbers";
     gridItem.id = "number " + [i];
 
     // Створюємо елемент <p> та вставляємо цифру.
