@@ -3,5 +3,22 @@ const numbers = [
     28, 14, 18, 30,
   ];
 
+
+  const shuffle = (numbers) => {
+    let m = numbers.length, t, i;
+  
+    while (m) {
+  
+      i = Math.floor(Math.random() * m--);
+  
+      t = numbers[m];
+      numbers[m] = numbers[i];
+      numbers[i] = t;
+    }
+  
+    return numbers;
+  }
+
+  generateRandomPairs(14)
   let gameContainer = document.getElementById("game");
-  gameContainer.appendChild(myModule(numbers));
+  gameContainer.appendChild(fieldСreation(shuffle(pairsArray)));
