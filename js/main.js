@@ -15,14 +15,14 @@ const pairsArray = generateRandomPairs(numberOfPairs);
 
 const shuffle = (numbers) => {
   let numLength = numbers.length;
-  let firstIndex, nextIndex;
+  let currentIndex, nextIndex;
 
   while (numLength) {
     nextIndex = Math.floor(Math.random() * numLength--);
 
-    firstIndex = numbers[numLength];
+    currentIndex = numbers[numLength];
     numbers[numLength] = numbers[nextIndex];
-    numbers[nextIndex] = firstIndex;
+    numbers[nextIndex] = currentIndex;
   }
   return numbers;
 };
