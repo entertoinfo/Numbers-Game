@@ -47,5 +47,6 @@ function oneZero(count){
       }
       return numbers;
     };
+    return createField(shuffle(pairsArray));
   }
   
