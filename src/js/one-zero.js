@@ -47,8 +47,5 @@ function oneZero(count){
       }
       return numbers;
     };
-  
-    let gameContainer = document.getElementById("game");
-    gameContainer.appendChild(createField(shuffle(pairsArray)));
   }
   
