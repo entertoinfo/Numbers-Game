@@ -554,8 +554,24 @@ video {
   width: 70px;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.auto-cols-auto {
+  grid-auto-columns: auto;
+}
+
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.grid-cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.grid-cols-10 {
+  grid-template-columns: repeat(10, minmax(0, 1fr));
 }
 
 .items-center {
@@ -645,6 +661,11 @@ video {
   font-weight: 500;
 }
 
+.text-secondary {
+  --tw-text-opacity: 1;
+  color: rgb(59 51 85 / var(--tw-text-opacity));
+}
+
 .text-text {
   --tw-text-opacity: 1;
   color: rgb(191 205 224 / var(--tw-text-opacity));
@@ -659,6 +680,10 @@ video {
 .shadow-secondary {
   --tw-shadow-color: #3B3355;
   --tw-shadow: var(--tw-shadow-colored);
+}
+
+.duration-300 {
+  transition-duration: 300ms;
 }
 
 @font-face {
