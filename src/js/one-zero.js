@@ -5,24 +5,18 @@ function oneZero(count) {
     gridContainer.className = "grid grid-cols-10 gap-3 p-2 border-4 rounded-sm border-secondary";
 
     const сheckNumbers = [];
-    //Функція для порівняння двох чисел обраних чисел та анімація відкривання\закриття числа. 
-      function handleClick(event) {
-      const numId = event.target.id;
-      const numCurrentlyActive  = parseInt(event.target.innerText);
-      const numStyle = document.getElementById(numId);
-
-      //(зміна кольору текста) Відкриття плитки при натисканні.
-      numStyle.style.color = "#BFCDE0";
-      
+    //Функція для порівняння двох чисел обраних чисел та анімація відкривання\закриття числа.
+    function handleClick(event) {
+      //Відкриття плитки при натисканні.
+      document.getElementById(event.target.id).style.color = "#BFCDE0";
       const number = {
-        id: numId,
-        style: numStyle,
-        value: numCurrentlyActive,
+        id: event.target.id,
+        style: document.getElementById(event.target.id),
+        value: parseInt(event.target.innerText),
       };
-      сheckNumbers.push(number);
+        сheckNumbers.push(number);
 
-      // Функція яка при натисканні на два числа які не є рівними, зафарбовує(ховає) число.
-      function numOperations(numbers) {
+      function comparisonNumbers(numbers) {
         if (numbers[0].value === numbers[1].value) {
           numbers.length = 0;
         } else {
@@ -32,12 +26,12 @@ function oneZero(count) {
           }
           сheckNumbers.length = 0;
         }
-    }
+      }
 
       if (сheckNumbers.length == 2) {
-      numOperations(сheckNumbers);
+        comparisonNumbers(сheckNumbers);
       }
-    };
+    }
 
     for (let i = 0; i < numbers.length; i++) {
       const gameNumbers = document.createElement("div");
