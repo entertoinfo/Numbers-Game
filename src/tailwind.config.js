@@ -23,6 +23,9 @@ module.exports = {
           },
         ],
       },
+      rotateX: {
+        '180': '40deg',
+      }
     },
     plugins: [],
   },
