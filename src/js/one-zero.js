@@ -3,6 +3,7 @@ function oneZero(count) {
     //Створення області для цифр
     const gridContainer = document.createElement("div");
     gridContainer.className = "grid grid-cols-10 gap-3 p-2 border-4 rounded-sm border-secondary";
+    gridContainer.id = "gameFrame";
 
     const сheckNumbers = [];
     //Функція для порівняння двох чисел обраних чисел та анімація відкривання\закриття числа.
@@ -71,3 +72,43 @@ function oneZero(count) {
   };
   return createField(shuffle(generateRandomPairs(count)));
 }
+
+  const reloadPage = () => {
+    location.reload();
+  };
+
+  function changeLevel(event){
+    const game = document.getElementById("game");
+    const remove = game.removeChild(document.getElementById("gameFrame"));
+
+    const currentLevel = event.target.innerText
+      switch (currentLevel) {
+        case 'eazy level': 
+        event.target.innerText = 'grandfather level';
+        gameContainer.appendChild(oneZero(30), remove);
+        break;
+
+        case 'grandfather level': 
+          event.target.innerText = 'crazy level';
+          gameContainer.appendChild(oneZero(50), remove);
+        break;
+
+        case 'crazy level':
+          event.target.innerText = 'eazy level'
+          gameContainer.appendChild(oneZero(15), remove);
+        break;
+      
+        default:
+          event.target.innerText = 'error level, reload'
+          setTimeout(() => {
+            reloadPage()
+          }, 1500);
+        break;
+      }
+  }
+
+  function levelInfo() {
+    const levelSelection = document.getElementById("level")
+    levelSelection.addEventListener("click", changeLevel);
+  }
+    levelInfo()
