@@ -85,17 +85,17 @@ function oneZero(count) {
       switch (currentLevel) {
         case 'eazy level': 
         event.target.innerText = 'grandfather level';
-        gameContainer.appendChild(oneZero(30), remove);
+        gameContainer.appendChild(oneZero(grandfatherLevel), remove);
         break;
 
         case 'grandfather level': 
           event.target.innerText = 'crazy level';
-          gameContainer.appendChild(oneZero(50), remove);
+          gameContainer.appendChild(oneZero(crazyLevel), remove);
         break;
 
         case 'crazy level':
           event.target.innerText = 'eazy level'
-          gameContainer.appendChild(oneZero(15), remove);
+          gameContainer.appendChild(oneZero(eazyLevel), remove);
         break;
       
         default:
