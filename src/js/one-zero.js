@@ -80,22 +80,21 @@ function oneZero(count) {
   function changeLevel(event){
     const game = document.getElementById("game");
     const remove = game.removeChild(document.getElementById("gameFrame"));
+    const levelDifficulty = event.target.dataset.level;
+    console.log(event)
 
     const currentLevel = event.target.innerText
       switch (currentLevel) {
         case 'eazy level': 
-        event.target.innerText = 'grandfather level';
-        gameContainer.appendChild(oneZero(grandfatherLevel), remove);
+        gameContainer.appendChild(oneZero(levelDifficulty), remove);
         break;
 
         case 'grandfather level': 
-          event.target.innerText = 'crazy level';
-          gameContainer.appendChild(oneZero(crazyLevel), remove);
+          gameContainer.appendChild(oneZero(levelDifficulty), remove);
         break;
 
         case 'crazy level':
-          event.target.innerText = 'eazy level'
-          gameContainer.appendChild(oneZero(eazyLevel), remove);
+          gameContainer.appendChild(oneZero(levelDifficulty), remove);
         break;
       
         default:
@@ -108,7 +107,10 @@ function oneZero(count) {
   }
 
   function levelInfo() {
-    const levelSelection = document.getElementById("level")
-    levelSelection.addEventListener("click", changeLevel);
+    const levelSelection = document.querySelectorAll('.level-select')
+
+    levelSelection.forEach(function(button){
+      button.addEventListener("click", changeLevel);
+    });
   }
     levelInfo()
