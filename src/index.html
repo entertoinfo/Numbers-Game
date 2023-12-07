@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zero One</title>
+    <link rel="stylesheet" href="public/styles.css" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body class="bg-primary bg-cover bg-no-repeat font-fixel-normal">
+    <header
+      class="flex items-center justify-around pt-4 pb-4 shadow-xl shadow-secondary bg-primary"
+    >
+      <img class="w-[70px]" src="./images/logo.svg" alt="Zero One Game" />
+      <p class="font-fixel-bold text-4xl text-text">Zero One</p>
+    </header>
+    <div class="wrapper pt-16">
+      <main class="flex justify-center flex-col w-fit m-0 mx-auto mb-8">
+        <div class="container mb-5 flex justify-around">
+          <button class="fixel-bold text-base text-text shadow-md shadow-text bg-secondary  rounded-3xl pt-3 pb-2 px-6" onclick="reloadPage()">Restart Game</button>
+          <!-- ! -->
+          <button data-level="15" class="level-select fixel-bold text-base text-text shadow-md shadow-text bg-secondary rounded-3xl pt-3 pb-2 px-6 relative">
+            eazy level
+            <span class="absolute top-0 right-0 inline-flex h-3 w-3">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-text opacity-75"></span>
+              <span class="rounded-full h-3 w-3 bg-text"></span>
+            </span>
+          </button>
+          <!-- ! -->
+          <button data-level="30" class="level-select fixel-bold text-base text-text shadow-md shadow-text bg-secondary rounded-3xl pt-3 pb-2 px-6 relative">
+            grandfather level
+            <span class="absolute top-0 right-0 inline-flex h-3 w-3">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-text opacity-75"></span>
+              <span class="rounded-full h-3 w-3 bg-text"></span>
+            </span>
+          </button>
+          <!-- ! -->
+          <button data-level="50" class="level-select fixel-bold text-base text-text shadow-md shadow-text bg-secondary rounded-3xl pt-3 pb-2 px-6 relative">
+            crazy level
+            <span class="absolute top-0 right-0 inline-flex h-3 w-3">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-text opacity-75"></span>
+              <span class="rounded-full h-3 w-3 bg-text"></span>
+            </span>
+          </button>
+          <!-- ! -->
+        </div>
+        <div id="game" class="font-fixel-regular text-tableNumbers">
+          <!-- Фрейм гри -->
+        </div>
+      </main>
+      <footer></footer>
+    </div>
+
+    <script src="js/one-zero.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
